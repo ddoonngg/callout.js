@@ -1,0 +1,22 @@
+.popup {
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  padding: 1rem;
+  background-color: white;
+}
+.trigger-btn {
+  width: auto;
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color: dodgerblue;
+  border-radius: 3px;
+  color: #ffffff;
+  display: inline-block;
+  border: none;
+  appearance: none;
+}
+h3 {
+  font-size: 20px;
+  margin: 0;
+  padding: 20px;
+}
