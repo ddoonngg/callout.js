@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Portal/> container should render to the parent element if 'disabledPortal is true: <h1>children</h1> 1`] = `
+<h1>
+  children
+</h1>
+`;
+
+exports[`<Portal/> container should render to the parent element if 'disabledPortal' is true: <h1>children</h1> 1`] = `
+<h1>
+  children
+</h1>
+`;
