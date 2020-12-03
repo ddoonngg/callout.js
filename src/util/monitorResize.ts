@@ -19,7 +19,6 @@ export default function monitorResize(element: Element, callback: Function) {
     const floorHeight = Math.floor(height);
     if (oldWidth !== floorWidth || oldHeight !== floorHeight) {
       Promise.resolve().then(() => {
-        console.log('resize 监听的方法被触发');
         callback({ width: floorWidth, height: floorHeight });
       });
     }
