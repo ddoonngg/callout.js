@@ -23,7 +23,6 @@ export default function makeAlign(
   const anchorElCoreOffset = getCoreOffsetToDoc(anchorElGeo, anchorElOffset, anchorPinKey);
   let elCoreOffset = getCoreOffsetToDoc(elGeo, elOffset, elPinKey);
   let elCoreOffsetCropMargin = mergeOffset(elCoreOffset, marginToOffset(placement, margin));
-  console.log({ el, anchorEl, alignConfig });
   const elFutureCoreOffset = anchorElCoreOffset;
   setElCssLocation(
     el,
@@ -39,8 +38,6 @@ function mergeOffset(offsetA: [number, number], offsetB: [number, number]) {
 function setElCssLocation(el: HTMLElement, left: number, top: number) {
   let originalLeft = parseFloat(window.getComputedStyle(el).left) | 0;
   let originalTop = parseFloat(window.getComputedStyle(el).top) | 0;
-  console.log({ originalLeft, originalTop });
-  console.log({ left, top });
   el.style.left = originalLeft + left + 'px';
   el.style.top = originalTop + top + 'px';
 }
